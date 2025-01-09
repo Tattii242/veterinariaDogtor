@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Dogtor</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="global">
+        <!-- aquí está el encabezado principal -->
+        <header class="cabecera">
+            <h1>VETERINARIA DOGTOR</h1>
+            <p>Cuidamos a tus mascotas como tú lo harías.</p>
+        </header>
+    
+        <!-- este es el menú de navegación -->
+        <nav> 
+            <ul> 
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#quienes-somos">QUIÉNES SOMOS</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Imagen de portada -->
+        <div class="imagen">
+            <img src="animales1.png" alt="Imagen de portada">
+        </div>
+
+        <!-- aquí ponemos la sección de quiénes somos -->.
+        <section id="quienes-somos">
+            <h2>QUIÉNES SOMOS</h2>
+            <p>Hola, somos Veterinaria Dogtor. Creamos este espacio para cuidar y proteger a tus compañeros de vida. Nuestro equipo está comprometido con brindar amor y profesionalismo a cada mascota que nos visita.</p>
+        </section>
+
+        <!--aquí añadimos imágenes con texto -->
+        <section id="animales">
+            <h2>Mascotas que amamos cuidar</h2>
+            <div class="imagenes-animales">
+                <div>
+                    <img src="perro1.png" alt="Perro feliz">
+                    <p>Los perros son los mejores amigos del hombre, y en Dogtor, los tratamos como familia.</p>
+                </div>
+                <div>
+                    <img src="gato1.png" alt="Gato curioso">
+                    <p>Los gatos tienen personalidades únicas y un cuidado especial, que ofrecemos con dedicación.</p>
+                </div>
+                <div>
+                    <img src="perro-gato.png" alt="Perro y gato juntos">
+                    <p>¿Sabías que perros y gatos pueden ser grandes amigos? Nosotros los cuidamos por igual.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--aquí está la sección de servicios -->
+        <section id="servicios">
+            <h2>SERVICIOS</h2>
+            <ul>
+                <li>Consulta general</li>
+                <li>Vacunación</li>
+                <li>Peluquería canina y felina</li>
+                <li>Emergencias 24/7</li>
+            </ul>
+        </section>
+       
+        <!-- aquí está la tabla de horarios -->
+        <section id="horarios">
+            <h2>Horarios de Atención</h2>
+            <table border="1">
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>8:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td>9:00 AM - 2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Domingos</td>
+                    <td>Cerrado</td>
+                </tr>
+            </table>
+        </section>
+        <section id="datoCurioso">
+            <h2>DATO CURIOSO</h2>
+            <button onclick="mostrarDatoCurioso()">Leer Dato Curioso</button>
+
+        <!--  formulario de contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <br><br>
+                <!-- Aquí está tu correo amor -->
+                <label for="correo">Correo:</label>
+                <br>
+                <input type="text" id="correo" required>
+                <br> <br>
+                <label for="mensaje">Mensaje:</label>
+                <br>
+                <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        
+            <footer>
+                <p>&copy; 2025 Veterinaria Dogtor. Cuidamos a tus mascotas como tú lo harías.</p>
+            </footer>
+        </section>
+    </div> 
+    <!--enlazamos el JavaScript aquí -->
+    <script src="scripts.js"></script>
+</body>
+</html>

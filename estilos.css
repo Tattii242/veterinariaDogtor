@@ -1,0 +1,145 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #5b8c5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: #333;
+    padding: 0;
+    font-size: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+/* Imágenes */
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.imagenes-animales {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px 0;
+    flex-wrap: wrap;  
+
+}
+
+.imagenes-animales div {
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+    
+}
+
+.imagenes-animales img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding:10px;
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    background-color: #5b8c5a;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: backgraund-color 0.3s ease;
+}
+button:hover{
+    background-color: #218838;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section#galeria .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#galeria .imagenes img {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size:14px;
+ }
+}
